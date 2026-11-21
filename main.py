@@ -1,6 +1,6 @@
-from morser import MorseCode
+from morse import MorseCode
 from led_controller import LedController
-from empfanger import Empfanger
+#from empfanger import Empfanger
 from machine import Pin
 import machine
 

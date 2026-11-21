@@ -17,13 +17,14 @@ class LedController:
         self.led.value(0)
         sleep_ms(self.UNIT)
 
-    def switch(self, code):
-        for char in code:
-            if char == self.DOT:
-                self.signal(1)
+    def switch(self, code, dauer):
+        for _ in range(dauer):
+            for char in code:
+                if char == self.DOT:
+                    self.signal(1)
 
-            elif char == self.DASH:
-                self.signal(3)
+                elif char == self.DASH:
+                    self.signal(3)
 
-            else:
-                pass
+                else:
+                    pass

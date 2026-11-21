@@ -22,7 +22,7 @@ class MorseCode:
     '"': '.-..-.', '$': '...-..-', '@': '.--.-.'
     }
 
-    def __init__(self, led_pin, wort):
+    def __init__(self, wort):
         self.wort = wort
 
     def übersetze(self):
