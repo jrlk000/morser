@@ -22,9 +22,9 @@ class MorseCode:
     '"': '.-..-.', '$': '...-..-', '@': '.--.-.'
     }
 
-    def __init__(self, led_pin, wort):
+    def __init__(self, wort):
         self.wort = wort
 
     def übersetze(self):
-        return [self.morse_code[char] for char in self.wort.upper() if char in self.morse_code]
+        return "*".join([self.morse_code[char] for char in self.wort.upper() if char in self.morse_code])
 

@@ -1,6 +1,6 @@
-from morser import MorseCode
+from morse import MorseCode
 from led_controller import LedController
-from empfanger import Empfanger
+#from empfanger import Empfanger
 from machine import Pin
 import machine
 
@@ -28,7 +28,7 @@ def main() -> None:
         morse_cdw = m_c.übersetze()
 
         #Übersetze das Morser Alphabet in ein Spannungssignal am Xiao c3
-        l_c.switch(morse_cdw)
+        l_c.switch(morse_cdw, DURCHLÄUFE)
 
         if empfänger:
             empfänger.puffer_leeren()
