@@ -26,5 +26,5 @@ class MorseCode:
         self.wort = wort
 
     def übersetze(self):
-        return [self.morse_code[char] for char in self.wort.upper() if char in self.morse_code]
+        return "*".join([self.morse_code[char] for char in self.wort.upper() if char in self.morse_code])
 
